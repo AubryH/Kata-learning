@@ -24,7 +24,7 @@ app.get('/', function (request, response){
     response.sendFile('index.html', { root: '.'});
 });
 
-app.get('/main.css', function (request, response){
+app.get('/css/main.css', function (request, response){
     response.sendFile('main.css', { root: './css'});
 });
 
