@@ -1,0 +1,8 @@
+server:
+  image: node:0.10-onbuild
+  working_dir: /mnt
+  volumes:
+    - web:/mnt
+  command: node server.js
+  ports:
+    - 6842:6842
